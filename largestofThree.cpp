@@ -10,14 +10,26 @@
 #include <iostream>
 using namespace std;
 
-int Num1=4;
-int Num2=3;
-
 int main() {
-    if(Num1>Num2) {
+
+    int Num1=12;
+    int Num2=0;
+    int Num3=-45;
+
+    if(Num1>Num2)
+    {
+        if (Num1>Num3)
+        {
+            cout<<"\n Num1 is greater than Num3 \n"<<endl;
+        }
         cout<<"\n Num1 > Num2 \n";
     }
-    else {
+    else
+    {
+        if (Num2>Num3)
+        {
+            cout<<"\n Num2 is greater than Num3 \n"<<endl;
+        }
         cout<<"\n Num1 < Num2 \n";
     }
 }
