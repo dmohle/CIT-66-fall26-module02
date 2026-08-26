@@ -20,21 +20,18 @@ int main() {
     cout << "\n Enter third integer: \n";
     cin >> num3;
 
-    if (num1>=num2) {
-        if (num1>=num3) {
-            largest = num1;
-        }
-        else {
-            largest = num3;
-        }
+//============================================================
+//EXTRA CREDIT LOGIC: Compound Condition with logical AND (&&)
+//============================================================
+
+    if (num1>=num2 && num1>=num3) {
+        largest = num1;
+    }
+    else if (num2>=num1 && num2>=num3) {
+        largest = num2;
     }
     else {
-        if (num2>=num3) {
-            largest = num2;
-        }
-        else {
-            largest = num3;
-        }
+        largest = num3;
     }
 
     cout << "\nThe largest integer is " << largest << "\n";
