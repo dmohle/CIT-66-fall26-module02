@@ -1,28 +1,43 @@
 //=============================================================================
 // File Name: largestOfThree
-// Author: Ryan A
-// Date: August 24, 2026
+// Author: Ryan A.
+// Date: August 26, 2026
 // Course: CIT-66 C++ Programming
 // Instructor: Professor Mohle
-// Description: Stores variable and checks if it is larger or smaller
+// Description: Finds the largest of three integers using nested if statements
 //=============================================================================
 
 #include <iostream>
 using namespace std;
 
 int main() {
-    int num1 = 0, num2 = 0;
+    int num1 = 0, num2 = 0, num3 = 0, largest = 0;
 
-    cout << "\n Is it bigger or smaller? \n";
+    cout << "\n Enter first integer: \n";
     cin >> num1;
+    cout << "\n Enter second integer: \n";
     cin >> num2;
+    cout << "\n Enter third integer: \n";
+    cin >> num3;
 
     if (num1>=num2) {
-        cout << "Num1 is greater or equal to Num2 \n";
+        if (num1>=num3) {
+            largest = num1;
+        }
+        else {
+            largest = num3;
+        }
     }
-    else{
-        cout << "Num1 is less than Num2 \n";
+    else {
+        if (num2>=num3) {
+            largest = num2;
+        }
+        else {
+            largest = num3;
+        }
     }
+
+    cout << "\nThe largest integer is " << largest << "\n";
 
     cin.get();
     cin.ignore();
