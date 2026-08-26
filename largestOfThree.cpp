@@ -13,11 +13,11 @@ using namespace std;
 int main() {
     int num1 = 0, num2 = 0, num3 = 0, largest = 0;
 
-    cout << "\n Enter first integer: \n";
+    cout << "\nEnter first integer: ";
     cin >> num1;
-    cout << "\n Enter second integer: \n";
+    cout << "\nEnter second integer: ";
     cin >> num2;
-    cout << "\n Enter third integer: \n";
+    cout << "\nEnter third integer: ";
     cin >> num3;
 
 //============================================================
@@ -27,7 +27,7 @@ int main() {
     if (num1>=num2 && num1>=num3) {
         largest = num1;
     }
-    else if (num2>=num1 && num2>=num3) {
+    else if (num2>=num3) {
         largest = num2;
     }
     else {
