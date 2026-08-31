@@ -8,6 +8,7 @@
 //==================================================
 #include <iostream>
 #include <string>
+#include <algorithm>
 
 using namespace std;
 
@@ -39,7 +40,13 @@ int main()
     cout << "The reverse of my string is : " << reversetest1 << "\n";
 
     test1[2] = 'C';
-    cout << test1 << endl;
+    cout << "test1[2] = C : " << test1 << endl;
+
+    //reverse using algorithm
+    reverse(test1.begin(), test1.end());
+
+    cout << "\nReverse using Algorithm of test1: ";
+    cout<<test1;
 
 
     return 0;
